@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "node --watch server/index.js"
+    "dev": "node --watch server/index.js",
+    "postinstall": "playwright install chromium"
   },
   "dependencies": {
     "cheerio": "^1.2.0",
@@ -17,6 +18,6 @@
     "ws": "^8.18.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "22.x"
   }
 }
